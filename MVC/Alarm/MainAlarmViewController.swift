@@ -15,6 +15,7 @@ class MainAlarmViewController: UITableViewController{
         NotificationCenter.default.addObserver(self, selector: #selector(handleChangeNotification(_:)), name: Store.changedNotification, object: nil)
         //dynamically append the edit button
         if alarms.count != 0 {
+            print("123")
             self.navigationItem.leftBarButtonItem = editButtonItem
         } else {
             self.navigationItem.leftBarButtonItem = nil
